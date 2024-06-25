@@ -110,7 +110,7 @@ cp hypr-settings "$HOME/.config/hypr/apps/"
 cp -r screenshots "$HOME/.config/hypr/apps/"
 cp -r usr "$HOME/.config/hypr/apps/"
 cp icon.png "$HOME/.config/hypr/imgs/hypr-settings.png"
-cp hypr-blizz-settings.desktop "$HOME/.local/share/applications/"
+cp hypr-settings.desktop "$HOME/.local/share/applications/"
 
 # Make sure AppRun is executable
 chmod +x "$HOME/.config/hypr/apps/hypr-settings"
