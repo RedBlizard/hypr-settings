@@ -106,16 +106,16 @@ if [ ! -d "$HOME/.config/hypr/imgs" ]; then
 fi
 
 # Copy files to the appropriate locations
-cp AppRun "$HOME/.config/hypr/apps/"
+cp hypr-settings "$HOME/.config/hypr/apps/"
 cp -r screenshots "$HOME/.config/hypr/apps/"
 cp -r usr "$HOME/.config/hypr/apps/"
 cp icon.png "$HOME/.config/hypr/imgs/hypr-settings.png"
 cp hypr-blizz-settings.desktop "$HOME/.local/share/applications/"
 
 # Make sure AppRun is executable
-chmod +x "$HOME/.config/hypr/apps/AppRun"
+chmod +x "$HOME/.config/hypr/apps/hypr-settings"
 
-APP="$HOME/.config/hypr/apps/AppRun"
+APP="$HOME/.config/hypr/apps/hypr-settings"
 ICON="$HOME/.config/hypr/imgs/hypr-settings.png"
 sed -i "s|Exec=HOME|Exec=${APP}|g" "$HOME/.local/share/applications/hypr-settings.desktop"
 echo ":: Desktop file installed successfully in ~/.local/share/applications"
@@ -123,7 +123,7 @@ echo ":: Desktop file installed successfully in ~/.local/share/applications"
 echo 
 echo "DONE!" 
 echo "Please add the following command to your hyprland.conf if you want to restore the changes after logging in."
-echo "exec-once = ~/.config/hypr-blizz-settings/hyprctl.sh"
+echo "exec-once = ~/.config/hypr-settings/hyprctl.sh"
 echo 
 echo "You can start the app from your application launcher or with the terminal from the folder apps with:"
-echo "./AppRun"
+echo "./hypr-settings"
