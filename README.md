@@ -1,4 +1,4 @@
-# Hypr Settings 1.0 RC1
+# Hypr Settings 1.0 RC2
 # USE NOW ONLY WITH ENDEAVOUROS
 
 This applications supports you to customize your Hyprland installation. You can overwrite the existing configuration with custom values without adding complex configuration files.
